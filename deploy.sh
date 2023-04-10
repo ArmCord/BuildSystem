@@ -1,6 +1,4 @@
 #!/bin/bash
-
-# buildDevE21.sh  buildDevE22.sh  buildStableE21.sh  buildStableE22.sh 
 build () {
   echo "Branch: $1"
   echo "Electron: $2"
@@ -8,9 +6,6 @@ build () {
   export ELECTRON=$2
   ./build.sh
 }
-
-greeting "Joe"
-
 echo "ArmCord Build Service"
 rm -rf toHost
 mkdir -p toHost/{stable,dev}
